@@ -1,2 +1,3 @@
-# realbook
-Interactive jazz standards collection
+# Real Book
+
+Interactive jazz standards chord progressions collection
