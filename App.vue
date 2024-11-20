@@ -127,7 +127,7 @@ const capitalize = s => s && s[0].toUpperCase() + s.slice(1)
                       v-for="pitch in Range.numeric([0, Chord.get(ch).notes.length - 1]).map(Chord.steps(ch)).map(n => noteNames[n])")
                   .text-md.md-text-lg.p-2.hover-brightness-150 {{ ch }}
                   .flex-1 
-                  .i-la-info-circle.op-50.hover-op-100.transition.mr-2(@click="globalChord = ch")
+                  .i-la-info-circle.op-50.hover-op-100.transition.mr-2(@pointerdown="globalChord = ch")
 
 
 
