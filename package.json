@@ -1,7 +1,7 @@
 {
 	"name": "chromatone-realbook",
 	"description": "Interactive jazz standards chord progressions collection",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"year": 2024,
 	"homepage": "https://realbook.chromatone.center",
 	"repository": {
