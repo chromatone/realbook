@@ -37,7 +37,7 @@ transition(name="slide")
         .sm-text-xl.rounded-lg.p-1.font-bold(:style="{ backgroundColor: pitchColor(pitch, 3, 1, 0.6) }") {{ chord }}
         .sm-text-xl.p-1.rounded-lg(:style="{ backgroundColor: color.hsl }") {{ data.name }}
         .flex-1 
-        button.text-button.top-2.right-4(@click="emit('reset')")
+        button.p-2.bg-light-200.shadow.rounded-lg.dark-bg-dark-800.text-button.top-2.right-4(@click="emit('reset')")
           .i-la-angle-down
       .flex.flex-wrap.gap-2
         .p-1 Intervals:

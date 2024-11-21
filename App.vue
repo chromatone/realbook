@@ -60,11 +60,13 @@ const songPitch = computed(() => noteNames[currentSong.value.DBKeySig])
     button.text-lg.absolute.-right-12.z-1000.top-6.bg-light-300.dark-bg-dark-800.p-2.rounded.shadow-lg(@click="panelOpen = !panelOpen")
       .i-la-bars(v-if="!panelOpen")
       .i-la-angle-left(v-else)
-    .flex.w-full.px-2.py-1
-
-      h1.text-xl Real Book
+    a.flex.items-center.gap-1.px-2.pt-2(href="https://chromatone.center" target="_blank")
+      img.w-6(src="/logo.svg")
+      .text-sm.font-bold Chromatone
+    .flex.w-full.px-2.py-1.items-baseline
+      h1.text-2xl Real Book
       .flex-1
-      a.mx-2.top-8.right-8.flex.gap-1.items-center.no-underline.text-sm(href="https://github.com/chromatone/realbook/" target="_blank")
+      a.mx-2.top-8.right-8.flex.gap-1.no-underline.text-sm(href="https://github.com/chromatone/realbook/" target="_blank")
         .i-la-github
         span v.{{ version }}
 
