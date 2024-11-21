@@ -1,3 +1,10 @@
+## v0.0.3 (2024-11-21)
+
+### New feature:
+
+- close sheet with a button([`f8fca82`](https://github.com/chromatone/realbook/commit/f8fca82fecbf3a53eb233dc4effed0cca1684867)) (by davay)
+- transposition by any interval & color mixing([`aaaedb5`](https://github.com/chromatone/realbook/commit/aaaedb56d3300940dfb28e66f3025497b27e76d9)) (by davay)
+
 ## v0.0.2 (2024-11-20)
 
 ### New feature:
