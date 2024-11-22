@@ -40,17 +40,18 @@ onClickOutside(panel, () => { panelOpen.value = false })
   button.text-lg.absolute.-right-12.z-1000.top-6.bg-light-300.dark-bg-dark-800.p-2.rounded.shadow-lg(@click="panelOpen = !panelOpen")
     .i-la-bars(v-if="!panelOpen")
     .i-la-angle-left(v-else)
-  a.flex.items-center.gap-1.px-2.pt-2(href="https://chromatone.center" target="_blank")
-    img.w-6(src="/logo.svg")
-    .text-sm.font-bold Chromatone
-  .flex.w-full.px-2.py-1.items-baseline
-    h1.text-2xl Real Book
-    .flex-1
-    a.mx-2.top-8.right-8.flex.gap-1.no-underline.text-sm(href="https://github.com/chromatone/realbook/" target="_blank")
-      .i-la-github
-      span v.{{ version }}
+  .p-2.flex.flex-col.gap-1
+    a.flex.items-center.gap-1.px-2.pt-2(href="https://chromatone.center" target="_blank")
+      img.w-6(src="/logo.svg")
+      .text-sm.font-bold Chromatone
+    .flex.w-full.px-2.py-1.items-baseline
+      h1.text-2xl Real Book
+      .flex-1
+      a.mx-2.top-8.right-8.flex.gap-1.no-underline.text-sm(href="https://github.com/chromatone/realbook/" target="_blank")
+        .i-la-github
+        span v.{{ version }}
 
-  .text-sm.p-2  Interactive jazz standards chord progressions collection
+    .text-sm.p-2  Interactive jazz standards chord progressions collection
 
   .flex.p-2.sticky.top-0.bg-light-400.dark-bg-dark-400.items-center.bg-op-80.dark-bg-op-80.backdrop-blur.z-1001
     .i-la-search.absolute.left-4.op-70.touch-action-none.pointer-events-none(v-if="!searchText")
